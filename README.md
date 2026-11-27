@@ -4,6 +4,7 @@
 ![FastAPI](https://img.shields.io/badge/FastAPI-0.141%2B-00a393.svg)
 ![Streamlit](https://img.shields.io/badge/Streamlit-1.61%2B-FF4B4B.svg)
 ![Scikit-Learn](https://img.shields.io/badge/scikit--learn-1.9.0-orange.svg)
+[![Live Demo](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://ca-housing-predictor.streamlit.app/)
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/GaneshArwan/end_to_end_ml_pipeline/blob/main/notebooks/california_housing_analysis.ipynb)
 
 This repository trains, evaluates, and serves regression models for California block-group median house values using 1990 U.S. Census data. It includes an MLflow training script, a ReportLab PDF evaluation generator, a validated FastAPI service, a Streamlit interface that runs either against FastAPI or standalone on Streamlit Community Cloud, and a Google Colab notebook.
@@ -84,7 +85,9 @@ pytest tests/ --cov=src -v
 
 ### Streamlit Community Cloud
 
-Deploy a new app from `GaneshArwan/end_to_end_ml_pipeline` (`main` branch, entry file `src/app.py`). When `API_URL` is unset, `src/app.py` loads `models/model.joblib` directly without requiring an external API server.
+Live app: https://ca-housing-predictor.streamlit.app/
+
+To deploy your own copy, point Streamlit Community Cloud at `GaneshArwan/end_to_end_ml_pipeline` (`main` branch, entry file `src/app.py`). When `API_URL` is unset, `src/app.py` loads `models/model.joblib` directly without requiring an external API server.
 
 ### Google Colab
 
