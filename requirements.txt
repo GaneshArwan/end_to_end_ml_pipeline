@@ -122,7 +122,7 @@ idna==3.19
     #   httpx
     #   requests
     #   yarl
-importlib-metadata==9.0.0
+importlib-metadata==10.2.0
     # via mlflow-skinny
 iniconfig==2.3.0
     # via pytest
